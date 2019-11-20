@@ -1,16 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { AceEditorModule } from 'ng2-ace-editor';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports:      [ BrowserModule, FormsModule, AceEditorModule ],
+  declarations: [ AppComponent, HelloComponent ],
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
